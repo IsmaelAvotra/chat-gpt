@@ -1,3 +1,87 @@
 .navbar {
-  background-color: red;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  font-size: 1.4rem;
+}
+
+.navbar .left {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.navbar .left .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar .left .logo svg {
+  font-size: 1.6rem;
+  color: #ff4820;
+}
+
+.navbar .left .nav nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav nav ul li {
+  list-style: none;
+}
+
+.nav nav ul li::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: #ff4820;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.nav ul li:hover::after {
+  content: '';
+  height: 2px;
+  width: 100%;
+  background-color: #f47521;
+  display: block;
+}
+
+.nav nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.navbar .right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar .right a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.navbar .right a:first-child:hover {
+  color: #ff4820;
+}
+
+.navbar .right a:last-child {
+  background-color: #ff4820;
+  padding: 0.3rem 0.8rem;
+  border-radius: 0.2rem;
+  border: 1px solid transparent;
+}
+
+.navbar .right a:last-child:hover {
+  background-color: transparent;
+  border-color: #ff4820;
 }
