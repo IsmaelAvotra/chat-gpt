@@ -1,10 +1,26 @@
 .blogs {
-  margin-top: 4rem;
+  margin-top: 6rem;
+  padding: 2rem;
+}
+
+.blogs .title {
+  margin-bottom: 3rem;
+  padding: 0.5rem;
+}
+
+.blogs .title h3 {
+  font-size: 2.5rem;
+  line-height: 45px;
+  background-image: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.blogs .content {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 2rem;
-  margin-bottom: 4rem;
 }
 
 .blogs .left {
@@ -22,13 +38,13 @@
 }
 
 .blog .bottom p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 700;
 }
 
 .left .blog .bottom {
-  height: 12rem;
   padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .left .blog .bottom p {
@@ -40,6 +56,7 @@
   justify-content: center;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.4s;
 }
 
 .blogs .right {
@@ -50,8 +67,8 @@
 }
 
 .right .blog .bottom {
-  height: 10rem;
   padding: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .right .blog .bottom p {
@@ -63,9 +80,55 @@
   justify-content: center;
   color: #ffffff;
   text-decoration: none;
+  transition: 0.4s;
+}
+
+.right .blog .bottom a:hover,
+.left .blog .bottom a:hover {
+  color: #ff8a71;
 }
 
 .blogs .right img,
 .left img {
   width: 100%;
+}
+
+/* ==============MEDIA QUERIES=============== */
+
+@media screen and (max-width: 1100px) {
+  .blogs .content {
+    gap: 1rem;
+  }
+  .blogs .right {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .blogs .content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .blogs {
+    padding: 1rem;
+  }
+  .blogs .title {
+    margin-bottom: 2rem;
+  }
+  .blogs .title h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .blogs .right {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .left .blog .bottom a,
+  .right .blog .bottom a {
+    font-size: 0.8rem;
+  }
 }

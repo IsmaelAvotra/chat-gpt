@@ -43,3 +43,36 @@
   color: #81afdd;
   line-height: 24px;
 }
+
+/* ==============MEDIA QUERIES=============== */
+
+@media screen and (max-width: 900px) {
+  .futures {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .futures .title h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .futures .title a {
+    font-size: 0.8rem;
+  }
+
+  .future h4 {
+    font-size: 1.2rem;
+  }
+
+  .future p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .futures {
+    padding: 1rem;
+  }
+}

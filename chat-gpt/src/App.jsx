@@ -2,6 +2,7 @@
 import About from './components/about/About'
 import Banner from './components/banner/Banner'
 import Blogs from './components/blogs/Blogs'
+import Footer from './components/footer/Footer'
 import Futures from './components/futures/Futures'
 import Logos from './components/logos/Logos'
 import Navbar from './components/navbar/Navbar'
@@ -17,6 +18,7 @@ function App() {
       <Futures />
       <Possibilities />
       <Blogs />
+      <Footer />
     </div>
   )
 }

@@ -68,3 +68,61 @@
 .possibility p {
   color: #81afdd;
 }
+
+/* ==============MEDIA QUERIES=============== */
+
+@media screen and (max-width: 900px) {
+  .about .what-is {
+    flex-direction: column;
+  }
+  .possibilities-content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about {
+    padding: 2rem 0;
+  }
+  .what-is .title h3 {
+    font-size: 1.2rem;
+  }
+  .what-is .description p {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+  }
+
+  .possibilities .title h3 {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+  }
+
+  .possibilities .title a {
+    font-size: 0.6rem;
+  }
+
+  .possibilities-content {
+    gap: 4rem;
+  }
+
+  .possibility h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .possibility p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .about {
+    margin: 0 1rem;
+    margin-top: 4rem;
+  }
+
+  .possibilities .title h3 {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}

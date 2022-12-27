@@ -15,6 +15,10 @@
   gap: 3rem;
 }
 
+.menu {
+  display: none;
+}
+
 .navbar .left .logo {
   display: flex;
   align-items: center;
@@ -84,4 +88,32 @@
 .navbar .right a:last-child:hover {
   background-color: transparent;
   border-color: #ff4820;
+}
+
+@media screen and (max-width: 1000px) {
+  .navbar .left .nav {
+    display: none;
+  }
+
+  .navbar .right {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu svg {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar h1 {
+    font-size: 1.2rem;
+  }
 }
