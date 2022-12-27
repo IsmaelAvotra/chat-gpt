@@ -1,0 +1,70 @@
+.about {
+  background-color: #042c54;
+  margin: 0 2rem;
+  margin-top: 4rem;
+  padding: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.about .what-is {
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.about .what-is .title {
+  flex: 2;
+}
+
+.what-is .title h3 {
+  font-size: 1.4rem;
+}
+
+.about .what-is .description {
+  flex: 5;
+}
+
+.what-is .description p {
+  line-height: 30px;
+  color: #81afdd;
+}
+
+.possibilities {
+  margin-top: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+.possibilities .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.possibilities .title h3 {
+  font-size: 2rem;
+  line-height: 45px;
+  background-image: linear-gradient(89.97deg, #ae67fa 1.84%, #f49867 102.67%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.possibilities .title a {
+  text-decoration: none;
+  color: #ff8a71;
+}
+
+.possibilities-content {
+  margin-top: 4rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.possibility h4 {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.possibility p {
+  color: #81afdd;
+}

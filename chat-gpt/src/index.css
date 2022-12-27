@@ -15,3 +15,18 @@ body {
   background-color: #040c18;
   color: #ffffff;
 }
+
+.before {
+  position: relative;
+}
+
+.before::before {
+  content: '';
+  height: 3px;
+  width: 38px;
+  bottom: 2.3rem;
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%),
+    #ffffff;
+  display: block;
+  position: absolute;
+}
